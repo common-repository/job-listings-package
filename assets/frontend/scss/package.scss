@@ -1,0 +1,128 @@
+/*Package List Plan*/
+
+.jlt-list-plan {
+  li {
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    strong {
+      width: 40%;
+      display: inline-block;
+    }
+  }
+}
+
+.btn-package-page {
+  margin-top: 15px;
+}
+
+/*Package list Row*/
+.package-list-row {
+  .package-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fafafa;
+    border: 1px solid #ccc;
+
+    div[class^="jlt-col-"] {
+      float: left;
+    }
+    &:hover {
+      background: #fff;
+    }
+  }
+  .package-meta {
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  .package-info {
+    font-size: 0.85em;
+  }
+  .package-btn {
+    text-align: right;
+  }
+}
+
+/*Package list Grid*/
+
+.package-list-grid {
+  > li {
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 15px;
+  }
+  &.package-list-grid-3 {
+    > li {
+      width: 32%;
+      &:nth-child(3n+1) {
+        clear: both;
+        margin-left: 0;
+      }
+    }
+  }
+  &.package-list-grid-2 {
+    > li {
+      width: 49%;
+      &:nth-child(2n+1) {
+        clear: both;
+        margin-left: 0;
+      }
+    }
+  }
+  &.package-list-grid-4 {
+    > li {
+      width: 23.5%;
+      &:nth-child(4n+1) {
+        clear: both;
+        margin-left: 0;
+      }
+    }
+  }
+  &:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+  .package-item {
+    padding: 0;
+    border: 2px solid #c4ccd4;
+    text-align: center;
+    .package-title {
+      font-weight: 600;
+      padding: 15px;
+    }
+    .package-price {
+      padding: 10px;
+      background: #c4ccd4;
+      mark, ins {
+        background: none;
+      }
+      .package-interval {
+        padding-left: 10px;
+        font-size: 0.8em;
+      }
+    }
+    .package-btn {
+      padding: 10px 20px;
+      background: #007acc;
+      display: block;
+      color: #fff;
+    }
+    .package-info {
+      font-size: 0.85em;
+      padding: 0 15px;
+      li {
+        border-bottom: 1px solid #c4ccd4;
+        padding: 8px;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+}
